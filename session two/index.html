@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .add_item {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .btn_add {
+            margin-left: 10px;
+            padding: 10px;
+            min-width: 60px;
+            border-radius: 50%;
+            border: 1px solid #dddddd;
+            background-color: #fff;
+        }
+
+        .input_list {
+            padding: 20px;
+            border-radius: 40px;
+            border: none;
+            box-shadow: 0 0 5px 5px #dddddd46;
+        }
+
+        input:focus {
+            border: 1px solid #d6d6d6;
+            outline-offset: 0px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="add_item">
+        <input id="list_input" class="input_list" placeholder="add list" type="text">
+        <button class="btn_add" onclick="add_item_list()">Add</button>
+        <button class="btn_add" onclick="remove()">remove</button>
+    </div>
+    <div class="list">
+        <ul id="list_item">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

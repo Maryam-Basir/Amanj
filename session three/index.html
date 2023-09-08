@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div dir="rtl" class="modal fade" id="modalBody" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ثبت در جدول</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control my-2" id="name" aria-describedby="emailHelp" placeholder="نام ">
+                    <input type="text" class="form-control my-2" id="lastName" aria-describedby="emailHelp" placeholder=" نام خانوادگی ">
+                    <input type="email" class="form-control my-2" id="email" aria-describedby="emailHelp" placeholder="ایمیل آدرس">
+                    <input type="number" class="form-control my-2" id="tel" aria-describedby="emailHelp" placeholder="تلفن">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" >بستن</button>
+                    <button type="button" class="btn btn-primary" onclick="addTbl()">ثبت</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="add-button my-4">
+            <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                data-target="#exampleModal"  onclick="openModal()" >وارد کردن اطلاعات</button>
+        </div>
+        <div class="tablAdd border rounded">
+            <table class="table table-hover" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">شماره تماس</th>
+                        <th scope="col">ایمیل</th>
+                        <th scope="col">نام خانوادگی</th>
+                        <th scope="col">نام</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tr">
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
